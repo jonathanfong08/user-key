@@ -36,7 +36,7 @@ with open ("user_key.json") as json_file:
 
 
 def mongo_db():
-    client = MongoClient("mongodb+srv://test:test@cluster0.gkz3ps5.mongodb.net/?retryWrites=true&w=majority")
+    client = MongoClient("mongodb+srv://your_username:your_password@cluster0.gkz3ps5.mongodb.net/?retryWrites=true&w=majority") #input ur own mongoDB link, this is just a placeholder
     db = client.get_database('userkey_db') #database name
     records = db.key_records
 
